@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 10%; /* 高さを50pxに指定 */
+    color: #ffffff;
+    background: #343434; /* 背景色を指定 */
+    padding: 20px 20px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index: 1;
+    border: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+    color: #ffffff;
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+main {
+    position: absolute;
+    top: 10%; /* 上下の固定位置を上から0pxにする */
+    margin: 10px;
+    color: #000000;
+}
+
+.sns{
+    display: flex;
+    font-size: 30px;
+    color: #3b3a2f;
+}
+
+main .sns img{
+    height: 30px;
+}
